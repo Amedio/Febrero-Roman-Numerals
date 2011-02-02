@@ -1,0 +1,5 @@
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\Febrero-Roman-Numerals\bin\Release\Febrero-Roman-Numerals.exe
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\Febrero-Roman-Numerals\bin\Release\Febrero-Roman-Numerals.pdb
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\Febrero-Roman-Numerals\obj\x86\Release\ResolveAssemblyReference.cache
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\Febrero-Roman-Numerals\obj\x86\Release\Febrero-Roman-Numerals.exe
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\Febrero-Roman-Numerals\obj\x86\Release\Febrero-Roman-Numerals.pdb

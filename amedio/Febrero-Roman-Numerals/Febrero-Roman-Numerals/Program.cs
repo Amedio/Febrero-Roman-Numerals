@@ -9,7 +9,7 @@ namespace Febrero_Roman_Numerals
     {
         static void Main(string[] args)
         {
-
+            RomanNumerals.ConvertToRoman("10");
         }
     }
 }

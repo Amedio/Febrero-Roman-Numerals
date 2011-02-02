@@ -1,0 +1,9 @@
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\TestRomanNumbers.dll
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\TestRomanNumbers.pdb
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\Febrero-Roman-Numerals.exe
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\nunit.framework.dll
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\Febrero-Roman-Numerals.pdb
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\bin\Release\nunit.framework.xml
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\obj\Release\ResolveAssemblyReference.cache
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\obj\Release\TestRomanNumbers.dll
+D:\repository\12meses12katas\amedio\Febrero-Roman-Numerals\TestRomanNumbers\obj\Release\TestRomanNumbers.pdb
