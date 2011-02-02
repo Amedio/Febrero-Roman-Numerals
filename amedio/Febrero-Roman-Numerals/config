@@ -1,0 +1,8 @@
+[remote "febrero"]
+	puttykeyfile = git@github.com:Amedio/Febrero-Roman-Numerals.git
+[remote "fatal: Not a git repository (or any of the parent directories): .git"]
+	url = https://Amedio@github.com/Amedio/Febrero-Roman-Numerals.git
+[remote "Febrero"]
+	url = https://Amedio@github.com/Amedio/Febrero-Roman-Numerals.git
+[remote "FEBRERO"]
+	url = https://Amedio@github.com/Amedio/Febrero-Roman-Numerals.git
