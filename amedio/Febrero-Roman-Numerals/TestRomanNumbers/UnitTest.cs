@@ -27,10 +27,47 @@ namespace TestRomanNumbers
 
             Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
 
-            input = "7";
-            expected = "VII";
+            input = "5";
+            expected = "V";
             result = RomanNumerals.ConvertToRoman(input);
             Assert.AreEqual(expected, result);
+
+            Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
+
+            input = "500";
+            expected = "D";
+            result = RomanNumerals.ConvertToRoman(input);
+            Assert.AreEqual(expected, result);
+
+            Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
+
+            input = "505";
+            expected = "DV";
+            result = RomanNumerals.ConvertToRoman(input);
+            Assert.AreEqual(expected, result);
+
+            Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
+
+            input = "4";
+            expected = "IV";
+            result = RomanNumerals.ConvertToRoman(input);
+            Assert.AreEqual(expected, result);
+
+            Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
+
+            input = "40";
+            expected = "XL";
+            result = RomanNumerals.ConvertToRoman(input);
+            Assert.AreEqual(expected, result);
+
+            Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
+
+            //input = "7";
+            //expected = "VII";
+            //result = RomanNumerals.ConvertToRoman(input);
+            //Assert.AreEqual(expected, result);
+
+            //Console.WriteLine(String.Format("Test correct, input: {0}; result: {1}; expected: {2};", input, result, expected));
         }
     }
 }

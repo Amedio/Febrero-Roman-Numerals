@@ -57,9 +57,13 @@ namespace Febrero_Roman_Numerals
                 int number = Convert.ToInt32(conversor[i].number.ToString());
                 string tmpRomanConv = (strNumber[i] != '0') ? "".PadLeft(number, padding) : "";
 
-                if (tmpRomanConv.Length > 5)
+                if (tmpRomanConv.Length == 5)
                 {
-                    char[] auxArr = tmpRomanConv.ToCharArray(0, tmpRomanConv.Length - 5);
+                    tmpRomanConv = fivePadding.ToString();
+                }
+                else if (tmpRomanConv.Length == 4)
+                {
+                    tmpRomanConv = padding.ToString() + fivePadding.ToString();
                 }
 
 
@@ -67,7 +71,7 @@ namespace Febrero_Roman_Numerals
             }
 
             StringBuilder sb = new StringBuilder();
-            foreach (DecToRomanFormat item in conversor)
+            foreach (DecToRomanFormat item in conversor.Reverse())
             {
                 sb.Append(item.romanConversion);
             }
