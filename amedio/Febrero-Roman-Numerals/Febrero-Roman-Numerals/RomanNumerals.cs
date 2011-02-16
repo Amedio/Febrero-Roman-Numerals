@@ -25,14 +25,18 @@ namespace Febrero_Roman_Numerals
 
         public static string ConvertToRoman(string decimalNumber)
         {
-            char[] strNumber = decimalNumber.Reverse().ToArray();
-            DecToRomanFormat[] conversor = new DecToRomanFormat[strNumber.Length];
+            return ConvertToRomanRec(decimalNumber, decimalNumber.Length);
+        }
 
-            for (int i = 0; i < strNumber.Length; i++)
+        private static string ConvertToRomanRec(string decimalNumber, int p)
+        {
+            if (p != 0)
             {
+                char[] strNumber = decimalNumber.ToArray();
+
                 char padding = '-';
                 char fivePadding = '-';
-                switch (i + 1)
+                switch (p)
                 {
                     case 1:
                         padding = oneRoman;
@@ -52,31 +56,29 @@ namespace Febrero_Roman_Numerals
                         break;
                 }
 
-                conversor[i].number = strNumber[i];
-                conversor[i].position = i + 1;
-                int number = Convert.ToInt32(conversor[i].number.ToString());
-                string tmpRomanConv = (strNumber[i] != '0') ? "".PadLeft(number, padding) : "";
+                string aux = "";
 
-                if (tmpRomanConv.Length == 5)
-                {
-                    tmpRomanConv = fivePadding.ToString();
-                }
-                else if (tmpRomanConv.Length == 4)
-                {
-                    tmpRomanConv = padding.ToString() + fivePadding.ToString();
-                }
+                string nbr = strNumber[0].ToString();
 
+                if (Convert.ToInt32(nbr) == 4)
+                    aux = padding.ToString() + fivePadding.ToString();
+                else if (Convert.ToInt32(nbr) == 9)
+                    aux = padding.ToString() + ConvertToRoman("1".PadRight(p + 1, '0'));
+                else if (Convert.ToInt32(nbr) == 5)
+                    aux = fivePadding.ToString();
+                else if (9 > Convert.ToInt32(nbr) && Convert.ToInt32(nbr) > 5)
+                    aux = fivePadding.ToString() + ConvertToRoman((Convert.ToInt32(nbr) - 5).ToString().PadRight(p, '0'));
+                else if (4 > Convert.ToInt32(nbr) && Convert.ToInt32(nbr) >= 1)
+                    aux = "".PadRight(Convert.ToInt32(nbr), padding);
 
-                conversor[i].romanConversion = tmpRomanConv;
+                aux += ConvertToRomanRec(decimalNumber.Remove(0, 1), p - 1);
+
+                return aux;
             }
-
-            StringBuilder sb = new StringBuilder();
-            foreach (DecToRomanFormat item in conversor.Reverse())
+            else
             {
-                sb.Append(item.romanConversion);
+                return "";
             }
-
-            return sb.ToString();
         }
     }
 }
